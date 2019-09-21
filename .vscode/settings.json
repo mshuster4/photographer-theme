@@ -1,3 +1,4 @@
 {
-    "phpcs.autoConfigSearch": false
+    "phpcs.autoConfigSearch": false,
+    "phpcs.warningSeverity": 2
 }
