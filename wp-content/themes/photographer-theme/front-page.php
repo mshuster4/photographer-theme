@@ -1,17 +1,13 @@
 <?php 
-
-get_header();
+  get_header();
 ?>
 
-<div id="primary" class="content-area">
- <main id="main" class="site-main">
-  <div class="container">
-   <h1>Hello World</h1>
+<body>
+  <div class="home-page">
+    Image Here
   </div>
- </main>
-</div>
+</body>
 
 <?php
-get_sidebar();
-get_footer();
+  get_footer();
 ?>

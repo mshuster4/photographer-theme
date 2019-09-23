@@ -1,5 +1,5 @@
-<?php 
 
+<?php 
 get_header();
 ?>
 
