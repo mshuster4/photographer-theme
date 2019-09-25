@@ -15,3 +15,31 @@ function My_Scripts_enqueue()
     wp_enqueue_script('bootstrap-js');
 }
 add_action('wp_enqueue_scripts', 'My_Scripts_enqueue');
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+     )
+   );
+ }
+add_action( 'init', 'register_my_menus' );
+
+wp_nav_menu( array( 
+  'theme_location' => 'header-menu',
+  'container_class' => 'header-menu'
+   
+   ) 
+);
+
+$defaults = array(
+  'default-color'          => '000000',
+  'default-image'          => '%1$s/assets/images/bg-image.jpeg',
+  'default-repeat'         => 'no-repeat',
+  'default-size'           => 'cover',
+  'default-position-x'     => 'center',
+  'default-position-y'     => 'center',
+  'wp-head-callback'       => '_custom_background_cb',
+);
+add_theme_support('custom-background', $defaults);
