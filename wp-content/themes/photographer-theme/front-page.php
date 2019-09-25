@@ -2,12 +2,9 @@
   get_header();
 ?>
 
-<body>
+<body <?php body_class(); ?>>
   <div class="home-page">
     Image Here
   </div>
 </body>
 
-<?php
-  get_footer();
-?>
